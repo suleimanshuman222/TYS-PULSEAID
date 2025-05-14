@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TYS PulseAid</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+  <header>
+    <img src="https://assets.onecompiler.app/43d5vcbzk/43hqwxm89/TYS.jpg" alt="TYS Logo"> <!-- Your actual logo image -->
+    <h1>PULSEAID</h1>
+    <p>"Turning Panic Into Power"</p>
+  </header>
+
+  <div class="container">
+    <p>Select the type of emergency to receive instant step-by-step guidance.</p>
+    <div class="grid">
+      <button class="btn" onclick="showHelp('cpr')">Cardiac Arrest (CPR)</button>
+      <button class="btn" onclick="showHelp('choking')">Choking</button>
+      <button class="btn" onclick="showHelp('seizure')">Seizure</button>
+      <button class="btn" onclick="showHelp('asthma')">Asthma Attack</button>
+      <button class="btn" onclick="showHelp('bleeding')">Heavy Bleeding</button>
+      <button class="btn" onclick="showHelp('burn')">Burn Injury</button>
+      <button class="btn" onclick="showHelp('stroke')">Stroke</button>
+      <button class="btn" onclick="showHelp('fainting')">Fainting</button>
+      <button class="btn" onclick="showHelp('poison')">Poisoning</button>
+    </div>
+
+    <div id="instructions">
+      <h2>Emergency Instructions</h2>
+      <div id="instruction-content"></div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TYS | Built by Teen Innovators to Save Lives
+  </footer>
+
+  <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
